@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FileGharBD - Download More, Pay Less. Premium software, tools, subscriptions and digital products.">
+  <title>FileGharBD — Download More, Pay Less</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="#">
+      <img src="logo.jpg" alt="FileGharBD logo">
+      <span>FileGharBD</span>
+    </a>
+    <nav class="desktop-nav">
+      <a class="active" href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#categories">Categories</a>
+      <a href="#how">How It Works</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+      <button class="cart-btn" id="cartBtn">Cart <span id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home">Home</a><a href="#products">Products</a><a href="#categories">Categories</a>
+    <a href="#how">How It Works</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">✓ Trusted Digital Marketplace in Bangladesh</span>
+      <h1>Download More,<br><span>Pay Less.</span></h1>
+      <p>Premium software, tools, subscriptions and digital products at affordable prices — all in one place.</p>
+      <div class="search">
+        <span>⌕</span><input id="heroSearch" placeholder="Search for software, tools, subscriptions..."><button onclick="searchProducts()">Search</button>
+      </div>
+      <div class="trust-row">
+        <div><b>↯</b><span><strong>Instant Delivery</strong><small>Get your files instantly</small></span></div>
+        <div><b>▣</b><span><strong>Secure Payment</strong><small>Simple checkout</small></span></div>
+        <div><b>✓</b><span><strong>Trusted Seller</strong><small>Quality products</small></span></div>
+        <div><b>◉</b><span><strong>24/7 Support</strong><small>We're here to help</small></span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="orb"></div>
+      <div class="laptop">
+        <div class="screen">
+          <span>W</span><span>Ps</span><span>Ai</span><span>Pr</span><span>O</span><span>C</span>
+        </div>
+        <div class="base"></div>
+      </div>
+      <div class="float-card fc1">Premium<br><b>Software</b></div>
+      <div class="float-card fc2">Best Deals 🔥</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="categories">
+  <div class="container">
+    <div class="section-head"><div><h2>Shop by Category</h2><p>Find what you need faster.</p></div><a href="#products">View All →</a></div>
+    <div class="categories">
+      <button class="cat" data-filter="Windows">▣<span>Windows</span></button>
+      <button class="cat" data-filter="Adobe">A<span>Adobe</span></button>
+      <button class="cat" data-filter="Office">▤<span>Microsoft Office</span></button>
+      <button class="cat" data-filter="Antivirus">◈<span>Antivirus</span></button>
+      <button class="cat" data-filter="Subscriptions">∞<span>Subscriptions</span></button>
+      <button class="cat" data-filter="Graphics">✦<span>Graphics & Design</span></button>
+      <button class="cat" data-filter="Video">✂<span>Video Editing</span></button>
+      <button class="cat" data-filter="Utilities">⚙<span>Utilities</span></button>
+      <button class="cat" data-filter="AI">AI<span>AI Tools</span></button>
+      <button class="cat" data-filter="Developer">‹/›<span>Developer Tools</span></button>
+    </div>
+  </div>
+</section>
+
+<section class="section products-section" id="products">
+  <div class="container">
+    <div class="section-head"><div><h2>Popular Products</h2><p>Popular digital products at FileGharBD.</p></div><div class="filter-tabs"><button class="selected" data-filter="All">All</button><button data-filter="Windows">Windows</button><button data-filter="Adobe">Adobe</button><button data-filter="Office">Office</button><button data-filter="Subscriptions">Subscriptions</button></div></div>
+    <div class="product-grid" id="productGrid"></div>
+  </div>
+</section>
+
+<section class="why section" id="about">
+  <div class="container why-grid">
+    <div>
+      <span class="eyebrow">WHY FILEGHARBD?</span>
+      <h2>Premium digital products, made affordable.</h2>
+      <p>FileGharBD is built to make useful software, tools and subscriptions easier to access at budget-friendly prices.</p>
+      <a class="primary" href="#products">Explore Products →</a>
+    </div>
+    <div class="benefits">
+      <div><b>₳</b><span><strong>Affordable Price</strong><small>Better value for your budget</small></span></div>
+      <div><b>⚡</b><span><strong>Instant Delivery</strong><small>Get your files without waiting</small></span></div>
+      <div><b>✓</b><span><strong>Trusted Platform</strong><small>Clear product information</small></span></div>
+      <div><b>◉</b><span><strong>24/7 Support</strong><small>Support when you need it</small></span></div>
+    </div>
+    <div class="offer"><span>Special Offer</span><h3>Save more on selected products.</h3><p>Check our latest deals and discover your next useful tool.</p><a href="#products">Shop Deals →</a></div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container stats-grid">
+    <div><b>10K+</b><span>Happy Customers</span></div>
+    <div><b>500+</b><span>Digital Products</span></div>
+    <div><b>4.9/5</b><span>Customer Rating</span></div>
+    <div><b>24/7</b><span>Support Available</span></div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="container">
+    <div class="center-head"><span class="eyebrow">SIMPLE PROCESS</span><h2>How It Works</h2><p>Get your digital product in three simple steps.</p></div>
+    <div class="steps">
+      <div><i>01</i><h3>Choose a Product</h3><p>Browse categories and pick what you need.</p></div>
+      <div><i>02</i><h3>Place Your Order</h3><p>Contact us through the available channel to order.</p></div>
+      <div><i>03</i><h3>Get Your Product</h3><p>Receive your product and start using it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-section" id="contact">
+  <div class="container contact-box">
+    <div><span class="eyebrow">GET IN TOUCH</span><h2>Need help choosing a product?</h2><p>Contact FileGharBD and we'll help you find the right digital product for your needs.</p></div>
+    <div class="contact-actions">
+      <a class="primary" href="https://wa.me/8801828815653" target="_blank">WhatsApp Us</a>
+      <a class="secondary" href="mailto:filegharbd@gmail.com">Email Us</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-brand"><a class="brand" href="#"><img src="logo.jpg" alt=""><span>FileGharBD</span></a><p>Download More, Pay Less. Premium software, tools, subscriptions and digital products in one place.</p><div class="social"><a href="https://www.facebook.com/share/1AsrUmesCF/" target="_blank">f</a><a href="https://wa.me/8801828815653" target="_blank">◉</a><a href="mailto:filegharbd@gmail.com">✉</a></div></div>
+    <div><h4>Quick Links</h4><a href="#home">Home</a><a href="#products">Products</a><a href="#categories">Categories</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+    <div><h4>Categories</h4><a href="#products">Windows</a><a href="#products">Adobe</a><a href="#products">Office</a><a href="#products">Subscriptions</a><a href="#products">AI Tools</a></div>
+    <div><h4>Support</h4><a href="#how">How to Buy</a><a href="#contact">Payment</a><a href="#contact">Support</a><a href="#">Terms</a><a href="#">Privacy</a></div>
+    <div><h4>Contact Us</h4><p>☎ 01828815653</p><p>✉ filegharbd@gmail.com</p><p>⌖ Bangladesh</p></div>
+  </div>
+  <div class="container copyright">© 2026 FileGharBD. All rights reserved. <span>Download More, Pay Less.</span></div>
+</footer>
+
+<div class="modal" id="cartModal">
+  <div class="modal-card"><button class="close" onclick="closeCart()">×</button><h2>Your Cart</h2><div id="cartItems"></div><div class="modal-foot"><b id="cartTotal">৳ 0</b><a class="primary" href="https://wa.me/8801828815653" target="_blank">Order on WhatsApp</a></div></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
